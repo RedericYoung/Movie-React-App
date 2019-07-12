@@ -2,4 +2,7 @@ In the project directory, you can run:
 
 ### `yarn start`
 
-Wish I had more time to rwealy spice this up.
+#### Navigate to http://localhost:3000/
+
+Thanks
+Wish I had more time to really spice this up.
