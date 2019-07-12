@@ -11,6 +11,7 @@ export default class MovieTables extends Component {
         this.movieService = new MovieService();
         this.removeRow = this.removeRow.bind(this);
         this.toggleFavorite = this.toggleFavorite.bind(this);
+        this.updatingRating = this.updatingRating.bind(this);
 
         this.state = {
             tableData: [],
@@ -44,7 +45,7 @@ export default class MovieTables extends Component {
     }
 
     updatingRating(id, newRating) {
-        const rowsOfData = this.findRow;
+        const rowsOfData = this.state.tableData;
         const index = _.findIndex(rowsOfData, function(o) { 
             return o.id === id; 
         });
