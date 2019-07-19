@@ -56,7 +56,7 @@ export default class MovieTables extends Component {
 
     toggleFavorite(id) {
         let addToFavorites = null;
-        const rowsOfData = this.findRow;
+        const rowsOfData = this.state.tableData;
         const index = _.findIndex(rowsOfData, function(o) { 
             return o.id === id; 
         });
